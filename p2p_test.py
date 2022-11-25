@@ -440,7 +440,9 @@ def main():
             print('Invalid arguments: eg. client <ip> <port> [peer_id]')
             return
     else:
-        print('mode must be one of (server, client}')
+        print('Usage:')
+        print('Server Mode:/n   file.py server <port>')
+        print('Client Mode:/n   file.py client <ip> <port> [peer_id]')
         return
 
 
