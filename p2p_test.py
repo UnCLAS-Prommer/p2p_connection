@@ -416,7 +416,9 @@ def start_client(server_host='Server端的PublicIP', server_port=15005, peer_id=
 def main():
     argv = sys.argv
     if len(argv) < 2:
-        print('Invalid arguments: mode must be one of (server, client).')
+        print('\nUsage:')
+        print('  Server Mode:\n   file.py server <port>')
+        print('  Client Mode:\n   file.py client <ip> <port> [peer_id]')
         return
 
     if argv[1] == 'server':
@@ -440,9 +442,9 @@ def main():
             print('Invalid arguments: eg. client <ip> <port> [peer_id]')
             return
     else:
-        print('Usage:')
-        print('Server Mode:/n   file.py server <port>')
-        print('Client Mode:/n   file.py client <ip> <port> [peer_id]')
+        print('\nUsage:')
+        print('  Server Mode:\n   file.py server <port>')
+        print('  Client Mode:\n   file.py client <ip> <port> [peer_id]')
         return
 
 
